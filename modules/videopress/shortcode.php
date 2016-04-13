@@ -170,6 +170,8 @@ function videopress_handle_editor_view_js() {
 			'flashonly' => __( 'Use legacy Flash Player (not recommended)', 'jetpack' ),
 		)
 	) );
+
+	add_editor_style( plugins_url( 'videopress-editor-style.css', __FILE__ ) );
 }
 add_action( 'admin_notices', 'videopress_handle_editor_view_js' );
 
